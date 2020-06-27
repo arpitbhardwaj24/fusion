@@ -3,11 +3,11 @@ import { action } from '@storybook/addon-actions';
 import { Button } from '@storybook/react/demo';
 import path from 'path';
 
-
-console.log(__dirname);
+const transformedPath = path.basename(__filename.replace(/\\/g, "/"), '.stories.js');
+// console.log(path.basename(transformedPath, '.stories.js'));
 
 export default {
-  title: 'Button',
+  title: transformedPath,
   component: Button,
 };
 

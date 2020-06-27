@@ -1,18 +1,10 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import { Button } from '@storybook/react/demo';
+import TestComponent from '.';
 
 export default {
   title: 'Button-new',
-  component: Button,
+  component: TestComponent,
 };
 
-export const Text = () => <Button onClick={action('clicked')}>Hello Button</Button>;
-
-export const Emoji = () => (
-  <Button onClick={action('clicked')}>
-    <span role="img" aria-label="so cool">
-      😀 😎 👍 💯
-    </span>
-  </Button>
-);
+export const Default = () => <TestComponent onClick={action('clicked')}>Hello Button</TestComponent>;
