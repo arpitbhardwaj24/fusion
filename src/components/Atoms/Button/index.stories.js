@@ -11,7 +11,7 @@ export default {
   component: TestComponent,
   parameters: {
     assets: [
-      __filename
+      pathArray[pathArray.length-3] + "\/" + pathArray[pathArray.length-2]
     ]
   }
 };

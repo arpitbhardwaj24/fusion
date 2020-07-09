@@ -2,8 +2,8 @@ var express = require('express');
 var router = express.Router();
 var fs = require('fs')
 
-router.get('/:component', function (req, res, next){
-    let source = '../src/components/' + req.params.component + "/index.js";
+router.get('/:type/:component', function (req, res, next){
+    let source = '../src/components/' + req.params.type + "/" + req.params.component + "/index.js";
     if (req.params.component.split("_")[req.params.component.split.length-1] === "temp") {
         fs.readFile(source, {encoding: 'utf-8'}, function(err,data){
             if (!err) {

@@ -9,8 +9,14 @@ var usersRouter = require('./routes/users');
 var duplicateRouter =require('./routes/duplicate');
 var editRouter =require('./routes/edit');
 
+var cors = require('cors')
+
+
 
 var app = express();
+
+app.use(cors())
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
