@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
   webpackFinal: async (config, { configType }) => {
@@ -13,11 +13,11 @@ module.exports = {
     // Return the altered config
     return config;
   },
-  stories: ['../src/**/*.stories.js'],
+  stories: ["../src/**/*.stories.js"],
   addons: [
-    '@storybook/preset-create-react-app',
-    '@storybook/addon-actions',
-    '@storybook/addon-links',
-    './.storybook/fusion-addon/register.js',
+    "@storybook/preset-create-react-app",
+    "@storybook/addon-actions",
+    "@storybook/addon-links",
+    "./.storybook/fusion-addon/register.js",
   ],
 };

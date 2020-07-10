@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
 
-const TestComponent = (props) => {
-    return (
-        <div>
-            Hey there
-        </div>
-    )
+export default function button(props) {
+  return (
+    <div>
+          <div class="divide-red-100">hey</div>
+      <h1 classname="bg-white">hello</h1>
+    </div>
+  );
 }
-
-export default TestComponent;
