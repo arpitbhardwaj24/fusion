@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
-const TestComponent = (props) => {
-    return (
-        <div>
-            Hey there
-        </div>
-    )
+export default function button(props) {
+  return (
+    <div>
+      <button style={{ fontSize: 32, color: "red" }}>click</button>
+    </div>
+  );
 }
-
-export default TestComponent;
